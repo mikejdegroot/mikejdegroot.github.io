@@ -44,24 +44,25 @@ $(function () {
     // const viewportHeight = $(window).height();
     var scrollTop = $(window).scrollTop();
     var tripleHeight = $('#blackOverlay').height() * 3;
+    var screenWidth = $(window).width();
 
-    if (scrollTop <= 650) {
+    if (scrollTop <= 650 && screenWidth > 780) {
       $name.show();
       $gaSummary.hide();
       $bangerDesc.hide();
       $spotlightDesc.hide();
-    } else if (scrollTop <= 1600) {
+    } else if (scrollTop <= 1600 && screenWidth > 780) {
       $gaSummary.show();
       $name.hide();
       $bangerDesc.hide();
       $spotlightDesc.hide();
-    } else if (scrollTop <= 2800) {
+    } else if (scrollTop <= 2800 && screenWidth > 780) {
       $bangerDesc.show();
       $spotlightDesc.hide();
-    } else if (scrollTop <= 4100) {
+    } else if (scrollTop <= 4100 && screenWidth > 780) {
       $spotlightDesc.show();
       $bangerDesc.hide();
-    } else {
+    } else if (screenWidth > 780) {
       $gaSummary.hide();
       $spotlightDesc.hide();
       $bangerDesc.hide();
