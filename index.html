@@ -44,10 +44,10 @@
       <!-- the info divs -->
       <div class="row">
         <div class="col-lg-6 col-md-6 up">
-          <h1>About<span href="#about"><i class="fa fa-arrow-down" aria-hidden="true"></i></span></h1>
-          <p>I'm a Front End web developer based in London.</p>
+          <h1 class="smallTitle">About<span href="#about"><i class="fa fa-arrow-down" aria-hidden="true"></i></span></h1>
+          <p>I'm a Full Stack web developer based in London.</p>
           <p>I love developing, producing music and being creative. I grew up in Brighton, did a Music Tech degree at London College of Music and studied Web Development at a General Assembly bootcamp course.</p>
-          <p>I love creating beautifully styled, useful projects from start to finish and try to combine my passions of music and developing as much as possible.</p>
+          <p>I love creating beautifully styled, engaging projects from start to finish and try to combine my passions of music and developing as much as possible.</p>
           <div class="navDiv">
             <h1><span class="navArrows" href="#sectionTwo"><i class="fa fa-arrow-down" aria-hidden="true"></i></span></h1>
           </div>
@@ -58,15 +58,15 @@
     </section>
     <section id="sectionTwo">
       <!-- projects intro section -->
-      <div id="blackOverlay">
-      </div>
+      <!-- <div id="blackOverlay">
+      </div> -->
       <div class="gaSumaryOverlay">
         <div class="row">
-          <div class="gaSumarry col-lg-6 col-md-8">
+          <div class="gaSumarry col-lg-6 col-md-8 hidden">
             <section id="sectionTwoPointTwo">
               <h1>General Assembly</h1>
-              <p>In the summer of 2017 I joined a General Assembly Web development immersive course to learn to code.</p>
-              <p>The GA immersive opened my eyes to the world of coding and has shown me how creative and exciting being a developer can be. </p><p>I enjoy the challenge of solving problems to buildout interesting projects</p><p> GA showed me that I not only had the ability to become a developer, but that I could also have a lot of fun doing it.</p>
+              <p>In the summer of 2017 I joined a General Assembly Web development immersive course.</p>
+              <p>The GA immersive opened my eyes to the world of coding and has shown me how creative and exciting being a developer can be.</p><p> GA showed me that I not only had the ability to become a developer, but that I could also have a lot of fun doing it.</p>
             </section>
           </div>
         </div>
@@ -85,7 +85,8 @@
             <p>An audio visual memory game</p>
           </div>
           <div class="projoOneDesc hidden">
-            <p>For this game I wanted to create something which was both fun to play and visually stimulating. I chose to make a multiplayer audio visual memory game. To play, you must repeat back the computer's sequence by hitting the keys in the right order. Get the sequence right to progress to the next round. As my first build, I challenged myself to create something which involved some challenging game logic and time based functionality- allowing me to learn as much as possible during the build.</p>
+            <h1>Soundboard</h1>
+            <p>A multiplayer audio visual memory game. To play, you must repeat back the computer's sequence by hitting the keys 1-8 on your keyboard. Get the sequence right to progress to the next round, fail and enter the sudden death round. The difficulty increases with each round until a player faulters and there is a winner.</p>
             <div>
               <p><a class="links" href="https://github.com/mikejdegroot/project-0" target="_blank">GitHub</a> || <a class="links" href="https://tranquil-anchorage-93539.herokuapp.com/" target="_blank">Heroku</a></p>
             </div>
@@ -99,9 +100,9 @@
     <section id="sectionFour">
       <div class="row">
         <div class="bangerAlertOverlay col-lg-6 offset-lg-6 col-sm-12">
-          <div class="projoTwoDesc col-lg-6">
-            <h1>DJ Song Suggestion App</h1>
-            <p>A song suggestion app for 'YouTube DJs'. Once the user inputs a song the app will return a suggestion which is not only from a related artist but also rhythmically matched to the input. The app can then stack the songs in video players, allowing users to create video playlists. The most challenging part of the project was implementing heavy usage of the Spotify API and Youtube APIs, but I wanted to challenge myself to implement an an external application with functionality which really added to the experience.</p>
+          <div class="projoTwoDesc col-lg-6 hidden">
+            <h1>Mix Tape</h1>
+            <p>A song suggestion app for 'YouTube DJs'. Once the user inputs a song the app will return a suggestion which is not only from a related artist but also rhythmically matched to the input. The app can then stack the songs in video players, allowing users to create video playlists.</p>
             <div>
               <p><a class="links" href="https://github.com/mikejdegroot/wdi-london-project-1" target="_blank">GitHub</a> || <a class="links" href="https://ancient-wave-67409.herokuapp.com/" target="_blank">Heroku</a></p>
             </div>
@@ -117,7 +118,8 @@
             <h1>Ecommerce App</h1>
           </div>
           <div class="projoThreeDesc hidden">
-            <p>An Ecommerce site for people to buy and sell homemade products. As a group project, we wanted to create something as near to a real-world site as possible, with realistic functionality and a professional feel for both buyers and sellers. Buyers can add items to their shopping basket, enter card details at the checkout. Sellers can receive orders and mark them as shipped. I was responsible for the orders functionality which presented fresh challenges in sending active orders to the relevant sellers, as well as updating their status.</p>
+            <h1>Wabi Sabi</h1>
+            <p>An Ecommerce site for people to buy and sell homemade products. Buyers can add items to their shopping basket, enter card details at the checkout. Sellers can receive orders and mark them as shipped. I was responsible for the orders functionality which sends  orders to the relevant sellers and allows them to update their status.</p>
             <div>
               <p><a class="links" href="https://github.com/alexandriako/wdi-ldn-project-3" target="_blank">GitHub</a> || <a class="links" href="https://wabi-sabi.herokuapp.com/" target="_blank">Heroku</a></p>
             </div>
@@ -134,9 +136,12 @@
     <section id="sectionSix">
       <div class="spotlightOverlay">
         <div class="row">
-          <div class="projoFourDesc col-lg-4 col-sm-8 offset-lg-1">
-            <h1>Social Issues Forum</h1>
-            <p>A discussion forum for social issues. Users can post articles they think need to be discussed, comment on other people's articles and tag other users in the discussion for cohesive conversation. Once tagged, a user receives a notification in their nav bar and is directed to the article they were tagged in. My second group project- built with a Ruby on Rails backend and an Angular Front End, the biggest challenge here was creating the notifications functionality, allowing users to tag each other and receive notifications. The notification functionality really adds to the realism of the site and adds a lot of value for users.</p>
+          <div class="projoFourDesc col-lg-6 col-md-8 hidden">
+            <h1>Spotlight</h1>
+            <p>A discussion forum for social issues. Users can post articles, comment and tag each other in the discussion for cohesive conversation. Once tagged, a user receives a notification in their nav bar and is directed to the article they were tagged in. My second group project, I took on a large part of the notifications functionality and styling tasks.</p>
+            <div>
+              <p><a class="links" href="https://github.com/maugeya/Project-4-api" target="_blank">GitHub BE</a> || <a class="links" href="https://github.com/maugeya/Project-4-frontend" target="_blank">GitHub FE</a> || <a class="links" href="https://intense-shelf-36393.herokuapp.com/" target="_blank">Heroku</a></p>
+            </div>
           </div>
         </div>
         <div class="vDiv">
@@ -181,9 +186,22 @@
         <div class="skillz col-lg-12">
         </div>
       </div>
+      <div class="vDiv">
+        <h1><span id="dark" class="navArrows" href="#contact"><i class="fa fa-arrow-down" aria-hidden="true"></i></span></h1>
+      </div>
+    </section>
 
 
-
+    <section id="contact" class="row">
+      <div class="col-lg-3 offset-lg-1">
+          <a class="linkOne hidden contacts" href="https://github.com/mikejdegroot" target="_blank">Github</a>
+      </div>
+      <div class="col-lg-4">
+        <a class="linkTwo hidden contacts" href="mailto:mike.j.degroot@gmail.com?subject=hi" target="_blank">Email</a>
+      </div>
+      <div class="col-lg-3">
+        <a class="linkThree hidden contacts" href="http://exercism.io/mikejdegroot" target="_blank">Exercism</a>
+      </div>
     </section>
   </main>
   <footer>

@@ -15,6 +15,7 @@ $(function () {
   var $projoThreeSquare = $('.projoThreeSquare');
   var $projoThreeIntro = $('.projoThreeIntro');
   var $projoThreeDesc = $('.projoThreeDesc');
+  var $contacts = $('.contacts');
 
   //Burger menu animation with greensock / gsap
   var menu = $('.menu'),
@@ -43,7 +44,7 @@ $(function () {
   function updateHeader() {
     // const viewportHeight = $(window).height();
     var scrollTop = $(window).scrollTop();
-    var tripleHeight = $('#blackOverlay').height() * 3;
+    // const tripleHeight = ($('#blackOverlay').height()*3);
     var screenWidth = $(window).width();
 
     if (scrollTop <= 650 && screenWidth > 780) {
@@ -51,23 +52,44 @@ $(function () {
       $gaSummary.hide();
       $bangerDesc.hide();
       $spotlightDesc.hide();
+      $contacts.hide();
     } else if (scrollTop <= 1600 && screenWidth > 780) {
       $gaSummary.show();
       $name.hide();
       $bangerDesc.hide();
       $spotlightDesc.hide();
+      $contacts.hide();
     } else if (scrollTop <= 2800 && screenWidth > 780) {
       $bangerDesc.show();
       $spotlightDesc.hide();
-    } else if (scrollTop <= 4100 && screenWidth > 780) {
+      $contacts.hide();
+    } else if (scrollTop <= 4000 && screenWidth > 780) {
+      // console.log(scrollTop);
+      $spotlightDesc.show();
+      $bangerDesc.hide();
+      $contacts.hide();
+    } else if (scrollTop >= 4085 && screenWidth > 780) {
+      // console.log(scrollTop);
+      $contacts.show();
       $spotlightDesc.show();
       $bangerDesc.hide();
     } else if (screenWidth > 780) {
+      $contacts.hide();
       $gaSummary.hide();
       $spotlightDesc.hide();
       $bangerDesc.hide();
     }
-    $('#blackOverlay').css('opacity', scrollTop / tripleHeight);
+    // $('#blackOverlay').css('opacity',scrollTop/tripleHeight);
+    // console.log(scrollTop);
+    if (scrollTop >= 4000 && scrollTop <= 4600) {
+      menuitem1.css({ 'background-color': 'black' });
+      menuitem2.css({ 'background-color': 'black' });
+      menuitem3.css({ 'background-color': 'black' });
+    } else {
+      menuitem1.css({ 'background-color': 'white' });
+      menuitem2.css({ 'background-color': 'white' });
+      menuitem3.css({ 'background-color': 'white' });
+    }
   }
 
   //instantiate  timeline
