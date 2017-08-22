@@ -68,7 +68,7 @@ $(function () {
       $spotlightDesc.show();
       $bangerDesc.hide();
       $contacts.hide();
-    } else if (scrollTop >= 4085 && screenWidth > 780) {
+    } else if (scrollTop >= 4000 && screenWidth > 780) {
       // console.log(scrollTop);
       $contacts.show();
       $spotlightDesc.show();
