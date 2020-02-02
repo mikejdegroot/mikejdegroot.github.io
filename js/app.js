@@ -1,6 +1,3 @@
-'use strict';
+"use strict";
 
-$(function () {
-
-  console.log('js');
-});
+$(function () {});
